@@ -1,1 +1,1 @@
-# coding-project-template
+# React Application: Paradise Nursery Shopping Cart
