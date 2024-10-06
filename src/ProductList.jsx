@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
+import { useDispatch } from 'react-redux';
+import { addItem } from './CartSlice';
+
 function ProductList() {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
+    const [addedToCart, setAddedToCart] = useState({}); // To track which products are added to cart
+    const dispatch = useDispatch();
 
     const plantsArray = [
         {
@@ -250,6 +255,17 @@ function ProductList() {
         setShowCart(false);
     };
 
+    const handleAddToCart = (product) => {
+        dispatch(addItem(product));
+
+        setAddedToCart((prevState) => (
+            {
+                ...prevState,
+                [product.name]: true,
+            }
+        ));
+    };
+
 
     return (
         <div>
@@ -282,7 +298,7 @@ function ProductList() {
                                         <img className="product-image" src={plant.image} alt={plant.name} />
                                         <p className="product-price">{plant.cost}</p>
                                         <p>{plant.description}</p>
-                                        <button className="product-button">Add to Cart</button>
+                                        <button className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart</button>
                                     </div>
                                 ))}
                             </div>
