@@ -102,20 +102,6 @@ body {
     /* Adjust height for better consistency */
 }
 
-.product-button {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 10px;
-}
-
-.product-button:hover {
-    background-color: #c0392b;
-}
-
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
@@ -209,6 +195,7 @@ body {
     }
 }
 
+
 /* ProductList.css */
 
 .product-button {
@@ -221,7 +208,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 8px 2px 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
 }

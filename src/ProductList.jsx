@@ -282,6 +282,7 @@ function ProductList() {
                                         <img className="product-image" src={plant.image} alt={plant.name} />
                                         <p className="product-price">{plant.cost}</p>
                                         <p>{plant.description}</p>
+                                        <button className="product-button">Add to Cart</button>
                                     </div>
                                 ))}
                             </div>
