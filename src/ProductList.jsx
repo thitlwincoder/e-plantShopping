@@ -271,9 +271,9 @@ function ProductList() {
                 </div>
             </div>
             {!showCart ? (
-                <div className="product-grid">
+                <div>
                     {plantsArray.map((section, sectionIndex) => (
-                        <div key={sectionIndex}>
+                        <div className="product-grid" key={sectionIndex}>
                             <h2 className="plant_heading">{section.category}</h2>
                             <div className="product-list">
                                 {section.plants.map((plant, plantIndex) => (
