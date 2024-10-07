@@ -7,12 +7,23 @@ const CartItem = ({ onContinueShopping }) => {
     const cart = useSelector(state => state.cart.items);
     const dispatch = useDispatch();
 
+
+    const parseItemCostToInteger = (itemCost) => {
+        /*
+            Remove currency symbol before multiplication.
+            Otherwise, NaN returned.
+            Improve in future: Use regex to remove all possible currency symbols?
+        */
+        return parseInt(itemCost.replace('$', ''), 10);
+    };
+
     // Calculate total amount for all products in the cart
     const calculateTotalAmount = () => {
         let totalCost = 0;
 
         cart.forEach((item) => {
-            totalCost += item.cost * item.quantity;
+            const itemCost = parseItemCostToInteger(item.cost);
+            totalCost += itemCost * item.quantity;
         });
 
         return totalCost;
@@ -53,6 +64,11 @@ const CartItem = ({ onContinueShopping }) => {
 
     // Calculate total cost based on quantity for an item
     const calculateTotalCost = (item) => {
+        let totalCost = 0;
+        const itemCost = parseItemCostToInteger(item.cost);
+        totalCost = item.quantity * itemCost;
+
+        return totalCost;
     };
 
     return (
