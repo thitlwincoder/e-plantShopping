@@ -52,14 +52,14 @@ const CartItem = ({ onContinueShopping }) => {
 
         if (updatedItem.quantity == 0) {
             // Remove item if number of items gets decremented to 0
-            dispatch(removeItem(updatedItem.name));
+            dispatch(removeItem(updatedItem));
         } else {
             dispatch(updateQuantity(updatedItem));
         }
     };
 
     const handleRemove = (item) => {
-        dispatch(removeItem(item.name));
+        dispatch(removeItem(item));
     };
 
     // Calculate total cost based on quantity for an item
