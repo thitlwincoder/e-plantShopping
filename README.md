@@ -1,4 +1,28 @@
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
+
 # Paradise Nursery Shopping Cart App
+<!-- TABLE OF CONTENTS -->
+<details open>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#course-information">Course Information</a></li>
+    <li>
+      <a href="#information-about-the-project">Information about the Project</a>
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+      </ul>
+    </li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+<br>
+
+
+## Introduction
 This repository was created as part of IBM's "Developing Front End Apps with React" course.<br>
 A React application was created as a final project: Paradise Nursery Shopping Cart App.<br>
 <br>
@@ -35,7 +59,8 @@ The implementation of the checkout button was not part of the project.<br>
 To inform the user of this, an alert is displayed when the button is clicked:<br>
 ![image](https://github.com/user-attachments/assets/87301988-5013-4640-95c1-980eeb931bef)
 
-More is currently not possible in this application.<br>
+More is currently not possible in this application.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -45,6 +70,7 @@ More is currently not possible in this application.<br>
 Title: Developing Front End Apps with React<br>
 Type: Final Project<br>
 Course Provider: IBM<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -71,6 +97,7 @@ With regard to my role:
 - Redux (with Redux Toolkit)
 - Web Hosting: GitHub Pages
 - IBM Cloud IDE (based on Theia and Container)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -114,10 +141,12 @@ npm run deploy
 This commits changes in the gh-pages branch and updates the website.<br>
 A success message appears in the terminal:<br>
 
-
 ![image](https://github.com/user-attachments/assets/fab6b039-34c0-4832-a1bd-c20295485ffb)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
+
 
 ## Contact
 If you have any questions, please feel free to reach out via email: christian-schwanse (at) gmx.net
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
